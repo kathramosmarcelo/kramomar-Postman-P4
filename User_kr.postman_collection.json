@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "c845d355-b8fb-4cf9-8367-891b329f16f3",
+		"name": "User_kr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todos los Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar nuevo Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"id\" : \"008\", \r\n\"nameUser\":\"David\", \r\n\"idDocument\":\"1\", \r\n\"nameDocument\":\"DNI\", \r\n\"nroPhone\":\"912119689\", \r\n\"imeiPhone\":\"123\", \r\n\"email\":\"david@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9292/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
